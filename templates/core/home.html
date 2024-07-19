@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to the Video Hosting Platform </h1>
+    <ul>
+        {% for video in videos %}
+        <li><a href="/video/{{video.pk}}">{{video.title}}</a></li>
+        {% endfor %}
+    </ul>
+
+    
+{% endblock %}
